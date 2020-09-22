@@ -1,0 +1,20 @@
+nav{
+    margin: 0;
+    padding: 2vh 3vw;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: lightseagreen;
+}
+
+nav button {
+    background-color: white;
+    color: lightseagreen;
+    border: 0;
+    border-radius: 0.5em;
+}
+
+nav h1{
+    margin: 0;
+    color: white;
+}
