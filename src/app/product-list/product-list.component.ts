@@ -22,5 +22,4 @@ export class ProductListComponent implements OnInit {
   share(){
     alert("Sharing complete!");
   }
-
 }
