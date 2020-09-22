@@ -1,1 +1,13 @@
-<p>product-list works!</p>
+<div class="container">
+
+    <h1>Products</h1>
+
+    <div *ngFor="let p of products">
+        <h3>
+        <a [title]="p.name + ' ' + p.descrizione" href="#"> {{ p.name }} </a> 
+        </h3>
+    <p *ngIf="p.descrizione"> {{ p.descrizione }} </p>
+    <button (click)="share()">Share</button>
+    </div>
+
+</div>

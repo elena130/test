@@ -1,0 +1,16 @@
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+button{
+    background-color: lightseagreen;
+    color: white;
+    border: 0;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+button:hover{
+    cursor: pointer;
+}
