@@ -4,7 +4,7 @@
 
     <div *ngFor="let p of products">
         <h3>
-        <a [title]="p.name + ' ' + p.descrizione" href="#"> {{ p.name }} </a> 
+        <a [title]="p.name + ' ' + p.descrizione" [routerLink]="['/products', p.id]"> {{ p.name }} </a> 
         </h3>
     <p *ngIf="p.descrizione"> {{ p.descrizione }} </p>
     <button (click)="share()">Share</button>

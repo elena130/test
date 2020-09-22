@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
@@ -13,9 +14,9 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit(): void {
     this.products = [
-      { id: 1, name: 'prodotto1', descrizione: 'descrizione1', prezzo: 800},
-      { id: 2, name: 'prodotto2', descrizione: 'descrizione2', prezzo: 500},
-      { id: 3, name: 'prodotto3', descrizione: '', prezzo: 200},
+      { id: 0, name: 'prodotto1', descrizione: 'descrizione1', prezzo: 800},
+      { id: 1, name: 'prodotto2', descrizione: 'descrizione2', prezzo: 500},
+      { id: 2, name: 'prodotto3', descrizione: '', prezzo: 200},
     ]
   }
 
