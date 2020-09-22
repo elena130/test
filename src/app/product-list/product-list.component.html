@@ -8,6 +8,7 @@
         </h3>
     <p *ngIf="p.descrizione"> {{ p.descrizione }} </p>
     <button (click)="share()">Share</button>
+    <app-product-alert [singleProduct] = "p" (notify)="onNotify()"></app-product-alert>
     </div>
 
 </div>

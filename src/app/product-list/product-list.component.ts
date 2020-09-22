@@ -13,13 +13,17 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit(): void {
     this.products = [
-      { id: 1, name: 'prodotto1', descrizione: 'descrizione1'},
-      { id: 2, name: 'prodotto2', descrizione: 'descrizione2'},
-      { id: 3, name: 'prodotto3', descrizione: ''},
+      { id: 1, name: 'prodotto1', descrizione: 'descrizione1', prezzo: 800},
+      { id: 2, name: 'prodotto2', descrizione: 'descrizione2', prezzo: 500},
+      { id: 3, name: 'prodotto3', descrizione: '', prezzo: 200},
     ]
   }
 
   share(){
-    alert("Sharing complete!");
+    window.alert("Sharing complete!");
+  }
+
+  onNotify() {
+    window.alert('You will be notified when the product goes on sale');
   }
 }
