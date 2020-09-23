@@ -4,10 +4,11 @@ import { CartService } from './cart.service';
 
 
 @NgModule({
-  declarations: [ CartService],
+  declarations: [ ],
   imports: [
     CommonModule
   ],
-  exports:[CartService]
+  exports:[],
+  providers:[CartService]
 })
 export class CoreModule { }
