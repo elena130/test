@@ -2,12 +2,18 @@
 
     <h1>Products</h1>
 
-    <div *ngFor="let p of products">
+    <div *ngFor="let p of products" class="product">
         <h3>
         <a [title]="p.name + ' ' + p.descrizione" [routerLink]="['/products', p.id]"> {{ p.name }} </a> 
         </h3>
     <p *ngIf="p.descrizione"> {{ p.descrizione }} </p>
-    <button (click)="share()">Share</button>
+    <button (click)="share()"> 
+        <mat-icon>share</mat-icon>
+        
+    </button>
+    <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+        <mat-icon>delete</mat-icon>
+      </button>
     <app-product-alert [singleProduct] = "p" (notify)="onNotify()"></app-product-alert>
     </div>
 

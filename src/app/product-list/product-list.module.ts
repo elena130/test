@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import {MatIconModule} from '@angular/material/icon';
 
 import { ProductListComponent } from './product-list.component';
 import { ProductAlertComponent } from './product-alert/product-alert.component';
@@ -9,7 +10,8 @@ import { ProductAlertComponent } from './product-alert/product-alert.component';
   declarations: [ProductListComponent, ProductAlertComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatIconModule
   ],
   exports:[ ProductListComponent, ProductAlertComponent ]
 })

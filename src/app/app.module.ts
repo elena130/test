@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import {MatIconModule} from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { CoreModule } from './core/core.module';
 import { CartModule } from './cart/cart.module';
 import { ShippingModule } from './shipping/shipping.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ShippingModule } from './shipping/shipping.module';
     CoreModule,
     CartModule,
     HttpClientModule,
-    ShippingModule
+    ShippingModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

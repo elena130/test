@@ -23,3 +23,9 @@ nav a{
     text-decoration: none;
     color: white;
 }
+
+nav button{
+    font-size: 1em;
+
+    padding: 0.5em;
+}
