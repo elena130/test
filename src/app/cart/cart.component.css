@@ -6,4 +6,13 @@
 .item{
     width: 100%;
     background-color: lightgray;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 2em;
+}
+
+form{
+    margin-top: 2vh;
 }
