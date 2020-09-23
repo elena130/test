@@ -8,19 +8,22 @@ import { ProductListModule } from './product-list/product-list.module';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { RouterModule } from '@angular/router';
 import { CoreModule } from './core/core.module';
+import { CartModule } from './cart/cart.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     ProductListModule,
-    CoreModule
+    CoreModule,
+    CartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
