@@ -5,17 +5,17 @@ import { Injectable } from '@angular/core';
 })
 export class CartService {
 
-  items:any[];
+  items = [];
 
-  addToChart( product:any ){
+  addToChart( product ){
     this.items.push(product);
   }
 
-  getItems():any[]{
+  getItems(){
     return this.items;
   }
 
-  clearChart():any[]{
+  clearChart(){
     this.items = [];
     return this.items;
   }
