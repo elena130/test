@@ -1,14 +1,23 @@
 .container{
     width: 50%;
     margin: auto;
+
+}
+
+.grid{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 button{
     background-color: lightseagreen;
     color: white;
     border: 0;
-    padding: 0.75em;
+  
     border-radius: 0.5em;
+    padding: 0.5em;
 }
 
 button:hover{
@@ -20,9 +29,13 @@ a{
     color: lightseagreen;
 }
 
-.product{
-    background-color: lightgray;
-    padding: 0.5em;
+.card{
+    max-width: 30%;
+    height: 25vh;
+    padding: 2em;
+  
+}
 
+.actions{
     margin-bottom: 1em;
 }

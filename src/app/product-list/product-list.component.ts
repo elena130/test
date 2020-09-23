@@ -14,7 +14,7 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit(): void {
     this.products = [
-      { id: 0, name: 'prodotto1', descrizione: 'descrizione1', prezzo: 800},
+      { id: 0, name: 'Prodotto1', descrizione: 'Descrizione1', prezzo: 800},
       { id: 1, name: 'prodotto2', descrizione: 'descrizione2', prezzo: 500},
       { id: 2, name: 'prodotto3', descrizione: '', prezzo: 200},
     ]
