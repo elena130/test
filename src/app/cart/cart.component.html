@@ -2,5 +2,19 @@
 <div *ngFor="let item of items">
     <span>{{ item.name }}</span>
     <span>{{ item.price | currency }}</span>
-
 </div>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+
+    <div>
+        <label for="name">Nome</label>
+        <input type="text" id="nome" formControlName="nome">
+    </div>
+
+    <div>
+        <label for="indirizzo">Indirizzo</label>
+        <input type="text" id="indirizzo" formControlName="indirizzo">
+    </div>
+
+    <button type="submit">Checkout</button>
+</form>
