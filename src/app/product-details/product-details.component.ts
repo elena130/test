@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
+import { CartService } from '../core/cart.service';
+
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
@@ -11,7 +13,13 @@ export class ProductDetailsComponent implements OnInit {
   product:any;
   products:any[] = [];
 
-  constructor(  private route: ActivatedRoute, ) { }
+  constructor(  private route: ActivatedRoute, 
+                private cartService:CartService ) { }
+
+  addToCart( item:any ){
+    this.cartService.addToChart(item);
+    window.alert("Your item ha been added to the chart");
+  }
 
   ngOnInit(): void {
     this.products = [
