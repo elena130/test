@@ -7,6 +7,7 @@ import { NavComponent } from './nav/nav.component';
 import { ProductListModule } from './product-list/product-list.module';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { RouterModule } from '@angular/router';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    ProductListModule
+    ProductListModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
