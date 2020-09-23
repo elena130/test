@@ -10,13 +10,13 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { RouterModule } from '@angular/router';
 import { CoreModule } from './core/core.module';
 import { CartModule } from './cart/cart.module';
+import { ShippingModule } from './shipping/shipping.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    ProductDetailsComponent,
-   
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +25,8 @@ import { CartModule } from './cart/cart.module';
     ProductListModule,
     CoreModule,
     CartModule,
-    HttpClientModule
+    HttpClientModule,
+    ShippingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
