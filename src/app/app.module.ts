@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,7 +33,8 @@ import { SharedModule } from './shared/shared.module';
     ShippingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    SharedModule
+    SharedModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,8 +10,6 @@ nav{
 nav button {
     background-color: white;
     color: lightseagreen;
-    border: 0;
-    border-radius: 0.5em;
 }
 
 nav h1{
@@ -22,10 +20,4 @@ nav h1{
 nav a{
     text-decoration: none;
     color: white;
-}
-
-nav button{
-    font-size: 1em;
-
-    padding: 0.5em;
 }
