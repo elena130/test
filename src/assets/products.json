@@ -1,0 +1,35 @@
+[
+    {   "id":0,
+        "nome":"Rolex",
+        "descrizione":"Orologio estremamente costoso, state alla larga se tenete al portafoglio",
+        "prezzo":"1000"
+    },
+    {   "id":1,
+        "nome":"Freccette",
+        "descrizione":"Assicuratevi di liberare la linea di tiro, non ci assumiamo responsabilità di fratelli infilzati",
+        "prezzo":"20"
+    },
+    {   "id":2,
+        "nome":"Borraccia",
+        "descrizione":"Non riempitela di caffè... non ne potete bere litri e pretendere di rimanere rilassati",
+        "prezzo":"10"
+    },
+    {   "id":3,
+        "nome":"Rolex",
+        "descrizione":"Orologio estremamente costoso, state alla larga se tenete al portafoglio",
+        "prezzo":"1000"
+    },
+    {   "id":4,
+        "nome":"Freccette",
+        "descrizione":"Assicuratevi di liberare la linea di tiro, non ci assumiamo responsabilità di fratelli infilzati",
+        "prezzo":"20"
+    },
+    {   "id":5,
+        "nome":"Borraccia",
+        "descrizione":"Non riempitela di caffè... non ne potete bere litri e pretendere di rimanere rilassati",
+        "prezzo":"10"
+    }
+    
+
+
+]

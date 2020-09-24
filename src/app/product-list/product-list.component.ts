@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable} from 'rxjs';
 
+import { ProductService } from '../core/product.service';
 
 @Component({
   selector: 'app-product-list',
@@ -8,16 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductListComponent implements OnInit {
 
-  products:any[] = [];
+  products;
 
-  constructor() { }
+  constructor( private productService:ProductService ) { }
 
   ngOnInit(): void {
-    this.products = [
-      { id: 0, name: 'Prodotto1', descrizione: 'Descrizione1', prezzo: 800},
-      { id: 1, name: 'prodotto2', descrizione: 'descrizione2', prezzo: 500},
-      { id: 2, name: 'prodotto3', descrizione: '', prezzo: 200},
-    ]
+     this.products = this.productService.getProducts();
   }
 
   share(){
